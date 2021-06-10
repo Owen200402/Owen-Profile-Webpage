@@ -1191,3 +1191,9 @@ article {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+.icons,
+i,
+i:hover {
+  opacity: 1%;
+}
