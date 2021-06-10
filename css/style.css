@@ -751,7 +751,7 @@ p {
   padding-top: 1rem;
 }
 
-.intro--primary h1 {
+.intro--primary h2 {
   color: lightblue;
 }
 
@@ -765,7 +765,7 @@ p {
   clip-path: polygon(50% 12%, 0% 0%, 0% 100%, 100% 100%, 100% 0%);
 }
 
-.intro--secondary h1 {
+.intro--secondary h2 {
   color: rgba(0, 0, 0, 0.774);
 }
 
