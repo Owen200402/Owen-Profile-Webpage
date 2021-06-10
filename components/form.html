@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial scale=1.0" />
+    <meta name="keywords" content="HTML, CSS" />
+    <meta name="description" content="..." />
+    <title>Owen's Portfolio</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+  </head>
+  <body>
+    <div class="form_framework">
+      <form
+        class="form_register"
+        action="https://formspree.io/f/mwkavdgk"
+        method="POST"
+      >
+        <h2>Tutoring Registration Form</h2>
+        <div>
+          <label for="name">Name:</label>
+          <input
+            id="name"
+            type="text"
+            maxlength="20"
+            autofocus
+            autocomplete="off"
+            required
+            name="Name"
+          />
+        </div>
+        <div>
+          <label for="role">Choose your role</label>
+          <select id="role" required name="Role">
+            <option hidden>Select...</option>
+            <option value="1">Tutor</option>
+            <option value="2">Tutee</option>
+          </select>
+        </div>
+        <div>
+          <label for="help"
+            >What subject/subjects do you need help with or want to
+            tutor?</label
+          >
+          <textarea
+            id="help"
+            maxlength="100"
+            placeholder="Subjects..."
+            autocomplete="off"
+            name="Subjects needed help with/ tutor"
+          ></textarea>
+        </div>
+        <div>
+          <label for="tutors"
+            >For tutors: What’s your availability for attending an online 15min
+            interview?</label
+          >
+          <input type="datetime-local" name="Availability" id="tutors" />
+        </div>
+        <div class="required">
+          <label for="phone number">*Phone Number:</label>
+          <input
+            id="phone number"
+            type="tel"
+            placeholder="123-456-7890"
+            required
+            maxlength="12"
+            autocomplete="off"
+            name="Phone Number"
+          />
+        </div>
+        <div class="required">
+          <label for="email">*Email Address:</label>
+          <input
+            type="email"
+            id="email"
+            minlength="10"
+            maxlength="30"
+            required
+            name="Email"
+          />
+        </div>
+        <div class="input_submit">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
