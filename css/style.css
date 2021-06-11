@@ -1,3 +1,5 @@
+@import "./normalize.css";
+
 *,
 *::before,
 *::after {
@@ -345,14 +347,6 @@ p {
 
 /* biography first-half media query */
 
-@media screen and (min-width: 1400px) {
-  #big_wrapper2 {
-    background: url(../image/Shanghai.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-}
-
 @media screen and (max-width: 1370px) {
   #big_wrapper2 {
     background-size: cover;
@@ -375,7 +369,37 @@ p {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  #big_wrapper2 {
+    background: url(../image/Shanghai_1097.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .wrapper h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #big_wrapper2 {
+    background: url(../image/Shanghai.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
 @media screen and (max-width: 1019px) {
+  #big_wrapper2 {
+    background: url(../image/Shanghai_1097.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .wrapper h1 {
+    font-size: 2.5rem;
+  }
+
   .article_block2 div {
     background: lightgrey;
   }
@@ -554,16 +578,6 @@ p {
 }
 
 @media screen and (min-width: 1024px) {
-  #big_wrapper2 {
-    background: url(../image/Shanghai_1097.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-
-  .wrapper h1 {
-    font-size: 2.5rem;
-  }
-
   /* box 1 media queries */
 
   .wrapper .box1 {
