@@ -376,7 +376,7 @@ p {
     background-position: center;
   }
 
-  .wrapper h1 {
+  .wrapper {
     font-size: 2.5rem;
   }
 }
@@ -519,18 +519,20 @@ p {
 
 /* Headings */
 
-.wrapper h1 {
+.wrapper__heading {
   font-family: "Arvo", Arial, Helvetica, sans-serif;
   font-size: 3.5rem;
   color: rgb(182, 77, 29);
   display: inline;
 }
 
-.wrapper p {
+.wrapper__heading::after {
+  content: "(click on photos to start your download)";
+  font-style: italic;
   font-size: 1.6rem;
-  display: inline;
   opacity: 0.7;
   color: black;
+  margin-left: 1.5rem;
 }
 
 .header_sub {
