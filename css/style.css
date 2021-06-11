@@ -48,7 +48,7 @@ body {
 #big_wrapper {
   height: fit-content;
   margin: 20px auto;
-  background: url("../image/Background.jpeg");
+  background: url("../image/Background.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
