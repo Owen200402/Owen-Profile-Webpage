@@ -194,7 +194,7 @@ body {
   background: url("../image/Shanghai_320.jpg") no-repeat;
   background-position: center;
   background-size: cover;
-  clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 90%);
+  clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 95%);
 }
 
 /* header -- shared with the main page */
@@ -353,12 +353,6 @@ p {
 /* biography first-half media query */
 
 @media screen and (max-width: 1370px) {
-  #big_wrapper2 {
-    background-size: cover;
-    background-position: center;
-    height: 180vh;
-  }
-
   .article_block2 div {
     width: 320px;
   }
@@ -395,6 +389,7 @@ p {
     background: url(../image/Shanghai_1097.jpg) no-repeat;
     background-size: cover;
     background-position: center;
+    clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 90%);
   }
 
   .wrapper {
@@ -808,13 +803,12 @@ p {
   color: lightgray;
 }
 
-.intro--book {
-  color: white;
+.card--book h2 {
+  color: var(--color-biography);
 }
 
-.intro--book h1,
-article {
-  color: var(--color-biography);
+.book__article {
+  color: var(--color-body-darker);
 }
 
 .card__design {
@@ -837,11 +831,11 @@ article {
 
 .card__design h2 {
   font-size: 3.6rem;
-  margin: 20px 5px;
+  margin: 20px;
   letter-spacing: 1px;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .card__design em {
@@ -853,21 +847,28 @@ article {
   font-size: 2rem;
   line-height: 1.5;
   word-spacing: 2px;
-  margin: 1.2rem;
+  margin: 3rem;
 }
 
-.card__design img {
+.card__design .intro__block img {
   object-fit: cover;
   max-width: 600px;
   height: 500px;
   align-self: center;
+  justify-self: center;
+  border-radius: 5rem;
+  padding: 2rem;
+}
+
+.card__design .book {
+  padding: 10px;
 }
 
 .card__design .book img {
   object-fit: fill;
   height: 700px;
   width: 100%;
-  border-radius: 2rem;
+  border-radius: 1.2rem;
   justify-self: center;
 }
 
@@ -903,6 +904,10 @@ article {
     max-width: 700px;
   }
 
+  .card__design .book img {
+    border-radius: 4.5rem;
+  }
+
   .card--book {
     padding-bottom: 100rem;
   }
@@ -922,7 +927,7 @@ article {
 
 @media screen and (min-width: 1700px) {
   .article__wide {
-    width: 100ch;
+    width: 80ch;
     justify-self: center;
   }
 }
