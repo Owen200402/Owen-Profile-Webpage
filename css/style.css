@@ -351,7 +351,7 @@ p {
   #big_wrapper2 {
     background-size: cover;
     background-position: center;
-    height: 170vh;
+    height: 180vh;
   }
 
   .article_block2 div {
@@ -366,6 +366,22 @@ p {
 
   #main_section2 h2 {
     font-size: 2.15rem;
+  }
+}
+
+@media screen and (max-width: 1370px) {
+  #big_wrapper2 {
+    background-size: cover;
+    background-position: center;
+    height: 170vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #big_wrapper2 {
+    background-size: cover;
+    background-position: center;
+    height: 205vh;
   }
 }
 
@@ -521,7 +537,7 @@ p {
 
 .wrapper__heading {
   font-family: "Arvo", Arial, Helvetica, sans-serif;
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   color: rgb(182, 77, 29);
   display: inline;
 }
@@ -536,7 +552,7 @@ p {
 }
 
 .header_sub {
-  margin: 25px 10px 35px 10px;
+  margin: 2.5rem 1rem 3.5rem 1rem;
 }
 
 .wrapper .fas {
@@ -581,6 +597,10 @@ p {
 
 @media screen and (min-width: 1024px) {
   /* box 1 media queries */
+
+  .wrapper__heading {
+    font-size: 2.8rem;
+  }
 
   .wrapper .box1 {
     grid-template-columns: repeat(3, 1fr);
@@ -778,7 +798,7 @@ p {
 .intro--secondary {
   background: rgb(184, 122, 30);
   padding-top: 8rem;
-  clip-path: polygon(50% 12%, 0% 0%, 0% 100%, 100% 100%, 100% 0%);
+  clip-path: polygon(50% 5%, 0% 0%, 0% 100%, 100% 100%, 100% 0%);
 }
 
 .intro--secondary h2 {
@@ -894,6 +914,10 @@ article {
 
   .card--book:nth-of-type(even) img {
     order: 2;
+  }
+
+  .intro--secondary {
+    clip-path: polygon(50% 12%, 0% 0%, 0% 100%, 100% 100%, 100% 0%);
   }
 }
 
