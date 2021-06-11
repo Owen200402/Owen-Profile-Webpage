@@ -173,20 +173,7 @@ body {
 }
 
 .pic_adjust {
-  margin-bottom: 1.3rem;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  clip-path: polygon(
-    0% 20%,
-    60% 20%,
-    60% 0%,
-    100% 50%,
-    60% 100%,
-    60% 80%,
-    0% 80%
-  );
-  animation: size_change 3s ease-in-out 1s infinite normal;
+  display: none;
 }
 
 /* Biography Page */
@@ -342,6 +329,24 @@ p {
 
   .section__paragraph {
     font-size: 1.7rem;
+  }
+
+  .pic_adjust {
+    display: flex;
+    margin-bottom: 1.3rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    clip-path: polygon(
+      0% 20%,
+      60% 20%,
+      60% 0%,
+      100% 50%,
+      60% 100%,
+      60% 80%,
+      0% 80%
+    );
+    animation: size_change 3s ease-in-out 1s infinite normal;
   }
 }
 
@@ -589,15 +594,9 @@ p {
   }
 }
 
-@media screen and (max-width: 552px) {
-  .centered {
-    display: none;
-  }
-}
+/* box 1 media queries */
 
 @media screen and (min-width: 1024px) {
-  /* box 1 media queries */
-
   .wrapper__heading {
     font-size: 2.8rem;
   }
