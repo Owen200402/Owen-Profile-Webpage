@@ -164,6 +164,9 @@ body {
 }
 
 .centered {
+  font-size: 1.4rem;
+  line-height: 1.2;
+  font-weight: 600;
   color: cyan;
   position: absolute;
   top: 50%;
