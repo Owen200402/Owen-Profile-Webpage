@@ -544,7 +544,7 @@ p {
 }
 
 .wrapper__heading::after {
-  content: "(click on photos to start your download)";
+  content: "(click on photos to start downloading)";
   font-style: italic;
   font-size: 1.6rem;
   opacity: 0.7;
