@@ -230,18 +230,18 @@ body {
 #main_section2 h2,
 p {
   margin-left: 10px;
-  font-size: 2rem;
+  font-size: 2.3rem;
   padding: 0.6rem;
   margin-right: 1rem;
 }
 
 #main_section2 h2 {
-  font-size: 1.9rem;
+  font-size: 2.2rem;
 }
 
 #main_section2 p {
-  font-size: 1.3rem;
-  width: 49ch;
+  font-size: 1.6rem;
+  width: 40ch;
   font-weight: 500;
 }
 
@@ -270,9 +270,8 @@ p {
 }
 
 .article_block2 h2 {
-  margin-top: 18px;
-  margin-bottom: 6px;
-  font-size: 20px;
+  margin-top: 1.8rem;
+  margin-bottom: 0.6rem;
   color: rgb(32, 17, 116);
 }
 
@@ -328,7 +327,7 @@ p {
   }
 
   .section__paragraph {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
   }
 
   .pic_adjust {
@@ -354,13 +353,12 @@ p {
 
 @media screen and (max-width: 1370px) {
   .article_block2 div {
-    width: 320px;
+    width: 32rem;
   }
 
   #main_section2 p {
-    font-size: 1.5rem;
-    width: 32ch;
-    font-weight: 450;
+    font-size: 1.6rem;
+    width: 30ch;
   }
 
   #main_section2 h2 {
@@ -844,7 +842,7 @@ p {
 
 .card__design article {
   font-family: "Arvo", serif;
-  font-size: 2rem;
+  font-size: 1.9rem;
   line-height: 1.5;
   word-spacing: 2px;
   margin: 3rem;
@@ -894,7 +892,7 @@ p {
 
   .card__design article {
     align-self: center;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     line-height: 1.7;
   }
 
@@ -913,7 +911,7 @@ p {
   }
 
   .article__biography .card--book:last-of-type {
-    padding-bottom: 90rem;
+    padding-bottom: 110rem;
   }
 
   .card--book:nth-of-type(even) img {
@@ -927,7 +925,7 @@ p {
 
 @media screen and (min-width: 1700px) {
   .article__wide {
-    width: 80ch;
+    width: 60ch;
     justify-self: center;
   }
 }
@@ -1236,8 +1234,9 @@ p {
   }
 }
 
-.icons,
-i,
-i:hover {
-  opacity: 100%;
+/* Container */
+
+.container__strain {
+  max-width: 1340px;
+  margin: 0 auto;
 }
