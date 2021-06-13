@@ -190,7 +190,7 @@ body {
 /* background */
 
 #big_wrapper2 {
-  height: 1250px;
+  height: 1320px;
   margin: 20px auto;
   margin-bottom: 0;
   background: url("../image/Shanghai_320.jpg") no-repeat;
@@ -260,6 +260,7 @@ p {
 
 .create_new {
   height: 30vh;
+  max-height: 30rem;
   overflow: scroll;
 }
 
