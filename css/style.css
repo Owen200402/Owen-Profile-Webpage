@@ -61,7 +61,8 @@ body {
   padding-top: 18px;
   padding-bottom: 18px;
   text-align: center;
-  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 #header_styles h1 {
@@ -517,7 +518,7 @@ p {
 /* header */
 
 .header_background {
-  background: url(../image/dan-tuykavin-O4aaYHvBIG0-unsplash.jpg) no-repeat;
+  background: url(../image/background_2400.jpg) no-repeat;
   object-fit: cover;
   background-attachment: fixed;
   background-size: cover;
