@@ -987,7 +987,7 @@ p {
 /* form */
 
 .form_framework {
-  height: 120vh;
+  height: 110vh;
   display: flex;
   justify-content: center;
   background: url(../images/background_yellow.jpg);
@@ -1000,7 +1000,7 @@ p {
 }
 
 .form_register {
-  margin-top: 5rem;
+  margin-top: 3rem;
   padding: 2rem;
   width: 800px;
 }
