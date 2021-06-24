@@ -987,7 +987,7 @@ p {
 /* form */
 
 .form_framework {
-  height: 110vh;
+  height: 180vh;
   display: flex;
   justify-content: center;
   background: url(../images/background_yellow.jpg);
@@ -1040,6 +1040,19 @@ p {
 .form_framework textarea:focus {
   outline: 0;
   box-shadow: 0 0 0 4px rgba(184, 44, 189, 0.25);
+}
+
+/* Form Media Quries */
+@media screen and (min-width: 330px) {
+  .form_framework {
+    height: 130vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .form_framework {
+    height: 110vh;
+  }
 }
 
 /* Footer */
