@@ -163,22 +163,6 @@ body {
   margin-left: 20px;
 }
 
-.centered {
-  font-size: 1.4rem;
-  line-height: 1.3;
-  font-weight: 500;
-  color: cyan;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: emphasize 3s ease-in-out 1s infinite normal;
-}
-
-.pic_adjust {
-  display: none;
-}
-
 /* Biography Page */
 
 /* layout */
@@ -332,24 +316,6 @@ p {
 
   .section__paragraph {
     font-size: 1.8rem;
-  }
-
-  .pic_adjust {
-    display: flex;
-    margin-bottom: 1.3rem;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    clip-path: polygon(
-      0% 20%,
-      60% 20%,
-      60% 0%,
-      100% 50%,
-      60% 100%,
-      60% 80%,
-      0% 80%
-    );
-    animation: size_change 3s ease-in-out 1s infinite normal;
   }
 }
 
