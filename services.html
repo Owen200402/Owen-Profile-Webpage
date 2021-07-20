@@ -116,19 +116,19 @@
                   <use xlink:href="images/sprite.svg#computer"></use>
                 </svg>
               </span>
-              Owen is organizing a completely free tutoring event for both
+              I am recently organizing a completely free tutoring event for both
               tutors and tutees to share their knowledge and grow with each
               other. Whether you are passionate about teaching, struggling to
               score higher, wanting to gain volunteer certificates, or recieving
               free tutoring by selected tutees, this would be a fantastic
-              opportunity for you. Owen will create group chats on different
-              platforms such as Instagram, Wechat and Snapchat and add people
-              in. Further details including time and arrangements will be
-              addressed inside the group chat.
+              opportunity for you. I will create group chats on different social
+              media platforms regarding the subjects people need help with and
+              add them in. Further details including time and arrangements will
+              be addressed inside the group chat.
               <br />
               <em
-                >Note: All these group chats ban advertisements and sensitive
-                content! It is not tolerent to violate other people's value and
+                >Note: All group chats ban advertisements and sensitive content!
+                It is not tolerent to violate other people's privacy and
                 property.
               </em>
             </article>
@@ -166,7 +166,7 @@
           method="POST"
         >
           <h2>Tutoring Registration Form</h2>
-          <div>
+          <div class="required">
             <label for="name">Name:</label>
             <input
               id="name"
@@ -177,14 +177,14 @@
               name="Name"
             />
           </div>
-          <div>
+          <div class="required">
             <label for="role">Select your role:</label>
             <select id="role" required name="Role">
               <option value="Tutor">Tutor</option>
               <option value="Tutee">Tutee</option>
             </select>
           </div>
-          <div>
+          <div class="required">
             <label for="help"
               >What subject/subjects do you need help with or want to
               tutor?</label
@@ -227,6 +227,20 @@
               required
               name="Email"
             />
+          </div>
+          <div>
+            <label for="help"
+              >Any Concerns and Questions? Feel free to type them in
+              here.</label
+            >
+            <textarea
+              id="help"
+              maxlength="100"
+              placeholder="Subjects..."
+              autocomplete="off"
+              name="Subjects needed help with/ tutor"
+            >
+            </textarea>
           </div>
           <div class="input_submit">
             <button class="button button-large">Submit</button>

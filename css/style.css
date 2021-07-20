@@ -246,7 +246,7 @@ p {
 .create_new {
   height: 30vh;
   max-height: 30rem;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .article_block2 {
@@ -947,7 +947,7 @@ p {
 /* form */
 
 .form_framework {
-  height: 180vh;
+  height: 120vh;
   display: flex;
   justify-content: center;
   background: url(../images/background_yellow.jpg);
@@ -1011,7 +1011,7 @@ p {
 
 @media screen and (min-width: 768px) {
   .form_framework {
-    height: 110vh;
+    height: 120vh;
   }
 }
 
@@ -1169,6 +1169,14 @@ p {
   right: 0;
   margin-top: 2rem;
   margin-right: 6rem;
+}
+
+.icon__container::before {
+  position: absolute;
+  right: 2rem;
+  bottom: 0;
+  content: "Click the arrow to go back to the top";
+  font-size: 1.5rem;
 }
 
 .fa-chevron-circle-up:hover {
