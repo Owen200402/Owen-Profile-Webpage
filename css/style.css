@@ -1173,11 +1173,12 @@ p {
 
 .icon__container::before {
   font-style: italic;
+  color: purple;
   position: absolute;
   right: 1rem;
-  bottom: 0;
-  content: "Click the arrow to back to the top";
-  font-size: 1.5rem;
+  bottom: 0rem;
+  content: "Click on the arrow to back to the top";
+  font-size: 2rem;
   margin-top: 2rem;
   margin-right: 6rem;
 }
@@ -1193,6 +1194,7 @@ p {
   }
   .icon__container::before {
     margin-right: 1rem;
+    font-size: 1.8rem;
   }
 }
 
