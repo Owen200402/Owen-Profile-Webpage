@@ -694,8 +694,6 @@ p {
 
 .nav4 {
   background-color: rgb(14, 44, 78);
-  margin: 0;
-  padding-bottom: 0;
   text-align: left;
 }
 
@@ -919,7 +917,7 @@ p {
 }
 
 .container--color2 {
-  background: rgba(165, 116, 10, 0.61);
+  background: rgba(124, 36, 1, 0.363);
 }
 
 .container--color3 {
@@ -935,7 +933,7 @@ p {
 }
 
 .icon--secondary {
-  fill: blue;
+  fill: rgb(187, 255, 0);
 }
 
 .icon--book {
