@@ -1168,15 +1168,18 @@ p {
   position: absolute;
   right: 0;
   margin-top: 2rem;
-  margin-right: 6rem;
+  margin-right: 5rem;
 }
 
 .icon__container::before {
+  font-style: italic;
   position: absolute;
-  right: 2rem;
+  right: 1rem;
   bottom: 0;
   content: "Click the arrow to back to the top";
   font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-right: 6rem;
 }
 
 .fa-chevron-circle-up:hover {
@@ -1187,6 +1190,9 @@ p {
 @media screen and (min-width: 1024px) {
   .fa-chevron-circle-up {
     margin-right: 0;
+  }
+  .icon__container::before {
+    margin-right: 1rem;
   }
 }
 
