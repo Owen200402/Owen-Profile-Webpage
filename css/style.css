@@ -984,7 +984,7 @@ p {
 
 .form_framework input,
 .form_framework textarea {
-  transition: box-shadow 0.15s;
+  transition: box-shadow ease-out 0.2s;
 }
 
 .form_framework #name,
@@ -999,7 +999,7 @@ p {
 .form_framework input:focus,
 .form_framework textarea:focus {
   outline: 0;
-  box-shadow: 0 0 0 4px rgba(184, 44, 189, 0.25);
+  box-shadow: 0 0 5px 3px rgba(184, 44, 189, 0.288);
 }
 
 /* Form Media Quries */
