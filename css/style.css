@@ -1139,7 +1139,7 @@ p {
   padding-bottom: 5rem;
 }
 
-@media screen and (min-width: 1224px) {
+@media screen and (min-width: 1200px) {
   .testimonial {
     margin: 0 auto;
     padding: 3rem;
@@ -1188,12 +1188,12 @@ p {
     font-size: 1.5rem;
   }
 }
-@media screen and (min-width: 1224px) {
+@media screen and (min-width: 1200px) {
   .fa-chevron-circle-up {
-    margin-right: 0;
+    margin-right: 3rem;
   }
   .icon__container::before {
-    right: 3rem;
+    right: 6rem;
     font-size: 1.8rem;
   }
 }
