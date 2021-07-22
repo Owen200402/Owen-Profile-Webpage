@@ -1168,19 +1168,18 @@ p {
   position: absolute;
   right: 0;
   margin-top: 2rem;
-  margin-right: 5rem;
+  margin-right: 5.5rem;
 }
 
 .icon__container::before {
   font-style: italic;
   color: purple;
   position: absolute;
-  right: 1rem;
+  right: 7rem;
   bottom: 0rem;
   content: "Click on the arrow to back to the top";
-  font-size: 2rem;
+  font-size: 1.3rem;
   margin-top: 2rem;
-  margin-right: 6rem;
 }
 
 .fa-chevron-circle-up:hover {
@@ -1188,12 +1187,17 @@ p {
   transition: transform 0.2s ease-out;
 }
 
+@media screen and (min-width: 768px) {
+  .icon__container::before {
+    font-size: 1.5rem;
+  }
+}
 @media screen and (min-width: 1024px) {
   .fa-chevron-circle-up {
     margin-right: 0;
   }
   .icon__container::before {
-    margin-right: 1rem;
+    right: 3rem;
     font-size: 1.8rem;
   }
 }
