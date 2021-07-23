@@ -850,6 +850,18 @@ p {
   justify-self: center;
 }
 
+.hyperlink {
+  font-style: oblique;
+}
+
+.hyperlink:hover {
+  color: purple;
+}
+
+.hyperlink:visited .hyperlink:link {
+  color: dodgerblue;
+}
+
 /* media queries for the intro */
 
 @media screen and (min-width: 1024px) {
