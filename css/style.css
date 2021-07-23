@@ -852,14 +852,14 @@ p {
 
 .hyperlink {
   font-style: oblique;
+  font-size: 1.5rem;
+  word-spacing: 1px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .hyperlink:hover {
   color: purple;
-}
-
-.hyperlink:visited .hyperlink:link {
-  color: dodgerblue;
 }
 
 /* media queries for the intro */
@@ -892,6 +892,10 @@ p {
 
   .card--book:nth-of-type(even) img {
     order: 2;
+  }
+
+  .card--book:nth-of-type(even) .hyperlink {
+    justify-content: flex-start;
   }
 }
 
