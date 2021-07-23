@@ -296,7 +296,7 @@ p {
 }
 
 .section__header {
-  font-size: 5rem;
+  font-size: 4rem;
   letter-spacing: 1px;
   font-weight: 700;
   margin-bottom: 3rem;
@@ -318,10 +318,6 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-  .section__header {
-    font-size: 4.5rem;
-  }
-
   .section__paragraph {
     font-size: 2.5rem;
   }
@@ -334,6 +330,14 @@ p {
 /* biography first-half media query */
 
 @media screen and (max-width: 1370px) {
+  #big_wrapper2 {
+    background-size: cover;
+    background-position: center;
+    height: 170vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .article_block2 div {
     width: 32rem;
   }
@@ -346,17 +350,7 @@ p {
   #main_section2 h2 {
     font-size: 2.15rem;
   }
-}
 
-@media screen and (max-width: 1370px) {
-  #big_wrapper2 {
-    background-size: cover;
-    background-position: center;
-    height: 170vh;
-  }
-}
-
-@media screen and (max-width: 768px) {
   #big_wrapper2 {
     background-size: cover;
     background-position: center;
