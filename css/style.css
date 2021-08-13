@@ -295,6 +295,30 @@ p {
   margin: 0 auto;
 }
 
+.intro {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro__image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.section__intro {
+  font-size: 2.7rem;
+  padding-bottom: 7rem;
+}
+
+.intro__email {
+  font-size: 1.8rem;
+  padding-top: 3rem;
+}
+
 .section__header {
   font-size: 4rem;
   letter-spacing: 1px;
@@ -324,6 +348,31 @@ p {
 
   .section__paragraph::after {
     font-size: 1.8rem;
+  }
+
+  .intro {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    position: relative;
+  }
+
+  .intro__image {
+    width: 150px;
+    height: 150px;
+    justify-self: center;
+    align-self: flex-start;
+  }
+
+  .intro__email {
+    padding-top: 6rem;
+    position: absolute;
+    left: 0;
+  }
+
+  .section__intro {
+    justify-self: end;
+    align-self: flex-start;
   }
 }
 
@@ -459,6 +508,15 @@ p {
 
 .badge3:hover {
   box-shadow: 0 0 0 3px rgb(228, 77, 195);
+}
+
+.badge4 {
+  background: rgb(33, 228, 66);
+  color: #fff;
+}
+
+.badge4:hover {
+  box-shadow: 0 0 0 3px rgb(47, 165, 62);
 }
 
 @media screen and (min-width: 389px) {
@@ -849,7 +907,6 @@ p {
   font-size: 1.5rem;
   word-spacing: 1px;
   display: flex;
-  justify-content: flex-end;
 }
 
 .hyperlink:hover {
