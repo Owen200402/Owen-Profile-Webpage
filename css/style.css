@@ -17,6 +17,10 @@ html {
   --color-biography: rgb(7, 11, 90);
   --title: rgb(20, 3, 95);
   --color-body-darker: #5c5577;
+  --color-icon-bio: #756d94;
+  --color-icon-main: rgb(165, 161, 161);
+  --color-icon-photo: rgb(163, 233, 98);
+  --color-icon-service: whitesmoke;
   --color-selection: dodgerblue;
 }
 
@@ -31,6 +35,23 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.5rem;
   font-size: 9rem;
+}
+
+.social-icons {
+  display: none;
+}
+
+/* Social Media Icons */
+@media screen and (min-width: 1024px) {
+  .social-icons {
+    list-style: none;
+    display: flex;
+    margin: 0;
+  }
+
+  .social-icons a {
+    margin: 0 0.7rem;
+  }
 }
 
 /* Home Page */
@@ -88,13 +109,13 @@ body {
   width: 100%;
   position: sticky;
   top: 0px;
-  font-size: 10px;
+  font-size: 1rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  z-index: 999;
+  z-index: 1;
 }
 
-#nav_stules ul {
+#nav_styles ul {
   list-style: none;
   padding-left: 0%;
 }
@@ -119,6 +140,10 @@ body {
 
 .button_adjust {
   margin-bottom: 0;
+}
+
+.icons-biography .fab {
+  color: var(--color-icon-bio);
 }
 
 /* video */
@@ -187,13 +212,16 @@ body {
 /* header -- shared with the main page */
 
 /* nav bar -- other properties are shared with the main page */
-
 .nav2 {
   background-color: #346a91;
 }
 
 .nav2 li:hover {
   background-color: rgb(12, 57, 99);
+}
+
+.icons-main .fab {
+  color: var(--color-icon-main);
 }
 
 /* articles */
@@ -565,6 +593,10 @@ p {
   background-color: rgb(92, 51, 88);
 }
 
+.icons-photo .fab {
+  color: var(--color-icon-photo);
+}
+
 /* Headings */
 
 .wrapper__heading {
@@ -764,6 +796,14 @@ p {
 .nav4 .navbar-nav li {
   margin: 0;
   text-align: left;
+}
+
+.icons-service .fab {
+  color: var(--color-icon-service);
+}
+
+.icons-service li {
+  margin: 0;
 }
 
 /* media query for Services first half */
