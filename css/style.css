@@ -19,8 +19,8 @@ html {
   --color-body-darker: #5c5577;
   --color-icon-bio: #756d94;
   --color-icon-main: rgb(165, 161, 161);
-  --color-icon-photo: rgb(163, 233, 98);
-  --color-icon-service: whitesmoke;
+  --color-icon-photo: rgb(100, 121, 177);
+  --color-icon-service: rgb(158, 154, 154);
   --color-selection: dodgerblue;
 }
 
@@ -120,8 +120,9 @@ body {
   padding-left: 0%;
 }
 
-.nav1 li:hover {
-  background-color: #221a2e;
+.nav1 .fab:hover {
+  color: white;
+  transition: linear 0.2s;
 }
 
 .nav_adjust {
@@ -216,8 +217,9 @@ body {
   background-color: #346a91;
 }
 
-.nav2 li:hover {
-  background-color: rgb(12, 57, 99);
+.nav2 .fab:hover {
+  color: white;
+  transition: linear 0.2s;
 }
 
 .icons-main .fab {
@@ -589,8 +591,9 @@ p {
   background-color: rgb(107, 60, 103);
 }
 
-.nav3 li:hover {
-  background-color: rgb(92, 51, 88);
+.nav3 .fab:hover {
+  color: rgb(32, 180, 206);
+  transition: linear 0.2s;
 }
 
 .icons-photo .fab {
@@ -796,6 +799,11 @@ p {
 .nav4 .navbar-nav li {
   margin: 0;
   text-align: left;
+}
+
+.nav4 .fab:hover {
+  color: white;
+  transition: linear 0.2s;
 }
 
 .icons-service .fab {
