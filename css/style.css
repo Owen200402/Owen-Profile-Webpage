@@ -11,6 +11,7 @@ html {
 }
 
 :root {
+  --clr-white: white;
   --border: 1px solid rgb(136, 46, 139);
   --margin: 0 1rem 1.5rem;
   --box_shadow: 1px 3px 10px rgb(95, 4, 68);
@@ -35,6 +36,26 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.5rem;
   font-size: 9rem;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--clr-white);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  visibility: visible;
+  z-index: 999;
+  transition: 0.2s linear;
+}
+
+.hide-preloader {
+  z-index: -999;
+  visibility: hidden;
 }
 
 .social-icons {
