@@ -8,7 +8,7 @@ window.addEventListener("load", () => {
 
 // Add fixed nav when scrolling
 const navbar = document.getElementById("nav_styles");
-const header = document.getElementById("header_styles");
+const header = document.querySelector(".header--entire");
 
 window.addEventListener("scroll", function () {
   const scrollHeight = window.pageYOffset;
