@@ -25,4 +25,12 @@ window.addEventListener("scroll", function () {
     navbar.style.position = "relative";
     navbar.style.width = "100%";
   }
+
+  // display back-to-top icon in biography
+  const icon = document.querySelector(".icon__container");
+  if (scrollHeight > 1000) {
+    icon.classList.add("icon__display");
+  } else {
+    icon.classList.remove("icon__display");
+  }
 });
