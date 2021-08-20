@@ -20,7 +20,7 @@ window.addEventListener("scroll", function () {
     navbar.style.position = "fixed";
     navbar.style.top = 0;
     navbar.style.right = 0;
-    navbar.style.width = "30%";
+    navbar.style.width = "32%";
   } else {
     navbar.style.position = "relative";
     navbar.style.width = "100%";
