@@ -290,7 +290,7 @@ p {
 }
 
 .article_block2 .div_2::after {
-  content: "(with link)";
+  content: "(Youtube Link Down Below)";
   font-size: 1rem;
   margin-left: 3rem;
   color: black;
