@@ -2,10 +2,6 @@
 const date = document.getElementById("date");
 date.innerHTML = new Date().getFullYear();
 
-window.addEventListener("load", () => {
-  document.querySelector(".preloader").classList.add("hide-preloader");
-});
-
 // Add fixed nav when scrolling
 const navbar = document.getElementById("nav_styles");
 const header = document.getElementById("header_styles");
