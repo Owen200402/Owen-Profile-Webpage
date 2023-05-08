@@ -63,7 +63,7 @@ body {
   display: none;
 }
 
-/* Social Media Icons */
+/* Social Media Icons  */
 @media screen and (min-width: 1024px) {
   .social-icons {
     list-style: none;
@@ -144,9 +144,9 @@ body {
   padding-left: 0%;
 }
 
-.nav1 .fab:hover {
-  color: white;
-  transition: linear 0.2s;
+/* Change property of the navbar provided by bootstrap */
+.nav-item {
+  font-size: 1.3rem;
 }
 
 .nav_adjust {
