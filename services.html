@@ -44,22 +44,22 @@
       href="https://fonts.googleapis.com/css2?family=Arvo&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
-    />
   </head>
   <body>
     <div id="big_wrapper4">
-      <header id="header_styles border_disable" class="header--entire">
+      <header id="header_styles" class="header--entire">
         <h1 class="animate__self">Breaking! Free tutoring?</h1>
         <p class="tagline">Can't wait? Scroll down to explore more!</p>
       </header>
-      <nav id="nav_styles" class="navbar navbar-expand-lg navbar-dark nav4">
-        <div class="container-fluid">
+      <nav
+        id="nav_styles"
+        class="fixed-nav navbar navbar-expand-lg navbar-dark nav4"
+      >
+        <div class="container-fluid" id="nav-container">
           <a class="navbar-brand nav-align" href="#">Menu</a>
           <button
-            class="navbar-toggler button_adjust"
+            id="toggler"
+            class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -69,10 +69,7 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div
-            class="collapse navbar-collapse nav-padding"
-            id="navbarSupportedContent"
-          >
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
               <li class="nav-item nav_adjust">
                 <a
@@ -84,11 +81,7 @@
                 >
               </li>
               <li class="nav-item nav_adjust">
-                <a
-                  class="nav-link"
-                  aria-current="page"
-                  href="biography.html"
-                  target="_self"
+                <a class="nav-link" href="biography.html" target="_self"
                   ><i class="fas fa-book"></i>Biography</a
                 >
               </li>
@@ -124,9 +117,8 @@
           </ul>
         </div>
       </nav>
-
       <div class="card__design intro--primary">
-        <h2>Purpose</h2>
+        <h2><i>Purpose</i></h2>
         <div class="grid grid--1x2 intro__block container__strain">
           <img src="images/Purpose.jpg" alt="Purpose" data-aos="slide-right" />
           <article class="box2 article__wide" data-aos="fade-up">
@@ -153,7 +145,7 @@
         </div>
       </div>
       <div class="card__design intro--secondary">
-        <h2>How to register?</h2>
+        <h2><i>How to register?</i></h2>
         <div class="grid grid--1x2 intro__block container__strain">
           <img
             src="images/Questions.webp"
@@ -166,109 +158,26 @@
                 <use xlink:href="images/sprite.svg#search"></use>
               </svg>
             </span>
-            The way to register is very simple! Scroll down to the form, fill
-            out necessary information. If you have further concerns or
-            questions, type in the textarea at the bottom. For tutees, state the
-            subject you need help with. For tutors, there will be a short
-            interview arranged according to your preferred time. So, please fill
-            out your email address and any necessary personal information. I
-            will get back to you as soon as I can.
+            The way to register is very simple! Click on the link below, fill
+            out the form. If you have further concerns or questions, type in the
+            textarea at the bottom. For tutees, state the subject you need help
+            with. For tutors, there will be a short interview arranged according
+            to your preferred time. So, please fill out your email address and
+            any necessary personal information. I will get back to you as soon
+            as I can.
+            <br />
+            <a href="register.html" target="_blank">Click here to register</a>
           </article>
         </div>
-      </div>
-      <div class="form_framework">
-        <form
-          class="form_register"
-          action="https://formspree.io/f/mwkavdgk"
-          method="POST"
-        >
-          <h2>Tutoring Registration Form</h2>
-          <div class="required">
-            <label for="name">Name:</label>
-            <input
-              id="name"
-              type="text"
-              maxlength="20"
-              autocomplete="off"
-              required
-              name="Name"
-            />
-          </div>
-          <div class="required">
-            <label for="role">Select your role:</label>
-            <select id="role" required name="Role">
-              <option value="Tutor">Tutor</option>
-              <option value="Tutee">Tutee</option>
-            </select>
-          </div>
-          <div class="required">
-            <label for="help"
-              >What subject/subjects do you need help with or want to
-              tutor?</label
-            >
-            <textarea
-              id="help"
-              maxlength="100"
-              placeholder="Subjects..."
-              autocomplete="off"
-              name="Subjects needed help with/ tutor"
-              required
-            ></textarea>
-          </div>
-          <div>
-            <label for="tutors"
-              >For tutors: What’s your availability for attending an online
-              15min interview?</label
-            >
-            <input type="datetime-local" name="Availability" id="tutors" />
-          </div>
-          <div class="required">
-            <label for="phone_number">Phone Number:</label>
-            <input
-              id="phone_number"
-              type="tel"
-              placeholder="123-456-7890"
-              required
-              maxlength="12"
-              autocomplete="off"
-              name="Phone Number"
-            />
-          </div>
-          <div class="required">
-            <label for="email">Email Address:</label>
-            <input
-              type="email"
-              id="email"
-              minlength="15"
-              maxlength="30"
-              required
-              name="Email"
-            />
-          </div>
-          <div>
-            <label for="help"
-              >Any Concerns or Questions? Feel free to type them in here.
-            </label>
-            <textarea
-              id="help"
-              maxlength="50"
-              autocomplete="off"
-              name="Subjects needed help with"
-            ></textarea>
-          </div>
-          <div class="input_submit">
-            <button class="button button-large">Submit</button>
-          </div>
-        </form>
       </div>
       <footer class="footer">
         <section>&copy; <span id="date"></span> Owen Zheng</section>
       </footer>
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script>
-        AOS.init();
-      </script>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="index.js"></script>
   </body>
-  <script src="services.js"></script>
 </html>

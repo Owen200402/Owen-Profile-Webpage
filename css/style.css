@@ -68,11 +68,13 @@ body {
   .social-icons {
     list-style: none;
     display: flex;
+    justify-content: left;
     margin: 0;
+    padding-left: 0%;
   }
 
   .social-icons a {
-    margin: 0 0.7rem;
+    margin-right: 0.7rem;
   }
 }
 
@@ -160,6 +162,7 @@ body {
 .fas,
 .fab {
   margin-right: 5px;
+  margin-left: 0px;
   width: 10px;
 }
 
@@ -498,10 +501,6 @@ p {
   #main_section2 {
     padding-top: 5rem;
   }
-
-  #nav_styles .nav4 a {
-    padding: 0;
-  }
 }
 
 /* badges */
@@ -688,6 +687,8 @@ p {
   .wrapper .box1 {
     grid-template-columns: repeat(3, 1fr);
     padding-bottom: 10rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .wrapper .container img {
@@ -712,7 +713,13 @@ p {
 
   .wrapper .box2 {
     grid-template-columns: 1fr 1fr 1.5fr;
-    padding-bottom: 10rem;
+    padding-bottom: 8rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .box2 a:hover {
+    color: purple;
   }
 
   .container a.stretch3 {
@@ -740,7 +747,7 @@ p {
   object-fit: cover;
   background-attachment: fixed;
   background-size: cover;
-  height: 100vh;
+  height: 90vh;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -752,10 +759,6 @@ p {
   letter-spacing: 1px;
   word-spacing: 1.5px;
   font-family: "Poppins", sans-serif;
-}
-
-.border_disable {
-  border-radius: none;
 }
 
 #big_wrapper4 .header--entire h1 {
@@ -811,12 +814,11 @@ p {
 
 .nav4 {
   background-color: rgb(14, 44, 78);
-  text-align: left;
 }
 
 .nav4 .navbar-nav li {
   margin: 0;
-  text-align: left;
+  padding: 0;
 }
 
 .nav4 .fab:hover {
@@ -891,7 +893,7 @@ p {
 }
 
 .intro--secondary h2 {
-  color: rgb(42, 16, 44);
+  color: rgb(0, 0, 0);
 }
 
 .intro--secondary article {
@@ -991,7 +993,7 @@ p {
   }
 
   .card__design h2 {
-    font-size: 3.3rem;
+    font-size: 3.5rem;
     text-align: center;
   }
 
@@ -1339,6 +1341,7 @@ p {
 @media screen and (min-width: 1024px) {
   .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
+    padding: 1.8rem;
   }
 }
 

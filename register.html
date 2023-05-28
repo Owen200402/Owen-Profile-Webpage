@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+  </head>
+  <body>
+    <div class="form_framework">
+      <form
+        class="form_register"
+        action="https://formspree.io/f/mwkavdgk"
+        method="POST"
+      >
+        <h2>Tutoring Registration Form</h2>
+        <div class="required">
+          <label for="name">Name:</label>
+          <input
+            id="name"
+            type="text"
+            maxlength="20"
+            autocomplete="off"
+            required
+            name="Name"
+          />
+        </div>
+        <div class="required">
+          <label for="role">Select your role:</label>
+          <select id="role" required name="Role">
+            <option value="Tutor">Tutor</option>
+            <option value="Tutee">Tutee</option>
+          </select>
+        </div>
+        <div class="required">
+          <label for="help"
+            >What subject/subjects do you need help with or want to
+            tutor?</label
+          >
+          <textarea
+            id="help"
+            maxlength="100"
+            placeholder="Subjects..."
+            autocomplete="off"
+            name="Subjects needed help with/ tutor"
+            required
+          ></textarea>
+        </div>
+        <div>
+          <label for="tutors"
+            >For tutors: What’s your availability for attending an online 15min
+            interview?</label
+          >
+          <input type="datetime-local" name="Availability" id="tutors" />
+        </div>
+        <div class="required">
+          <label for="phone_number">Phone Number:</label>
+          <input
+            id="phone_number"
+            type="tel"
+            placeholder="123-456-7890"
+            required
+            maxlength="12"
+            autocomplete="off"
+            name="Phone Number"
+          />
+        </div>
+        <div class="required">
+          <label for="email">Email Address:</label>
+          <input
+            type="email"
+            id="email"
+            minlength="15"
+            maxlength="30"
+            required
+            name="Email"
+          />
+        </div>
+        <div>
+          <label for="help"
+            >Any Concerns or Questions? Feel free to type them in here.
+          </label>
+          <textarea
+            id="help"
+            maxlength="50"
+            autocomplete="off"
+            name="Subjects needed help with"
+          ></textarea>
+        </div>
+        <div class="input_submit">
+          <button class="button button-large">Submit</button>
+        </div>
+      </form>
+      <footer class="footer">
+        <section>&copy; <span id="date"></span> Owen Zheng</section>
+      </footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
