@@ -124,7 +124,7 @@ document.querySelector("#switch-bttn").onclick = function () {
       link:
       <br />
       <a
-        href="https://github.com/akosek4/DSCI-100-Heart-Disease-Project"
+        href="https://github.com/Owen200402/TumorClassification"
         target="_blank"
         >Tumor Classification Data Science Model</a
       >
