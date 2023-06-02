@@ -340,11 +340,11 @@ p {
 }
 
 .article_block2 .p_duration2 {
-  --animate-duration: 2s;
+  --animate-duration: 1.5s;
 }
 
 .article_block2 .p_duration3 {
-  --animate-duration: 3s;
+  --animate-duration: 2s;
 }
 
 /* Section */
